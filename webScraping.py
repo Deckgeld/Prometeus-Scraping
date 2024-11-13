@@ -72,13 +72,6 @@ for i1 in range(0, numero_de_profesores):
     # Clic en el botón de siguiente
     driver.find_element(By.ID, f"repeat-course:{i1}:form-evaluation-teacher:btn-next").click()
 
-
-
-# Evaluar tutor
-WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, f"form-evaluation-tutor:j_idt456:10:appreciation"))
-    )
-
 print("Por errores no es pasible rellenar la encuesta de tutor, por favor rellenela manualmente")
 input("Presione enter para cerrar el navegador")
 print("Estas seguro que quieres cerrar el navegador?")

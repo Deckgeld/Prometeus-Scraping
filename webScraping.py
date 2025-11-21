@@ -30,11 +30,14 @@ WebDriverWait(driver, 10).until(
 )
 
 # Ingresar matrícula y contraseña
+# form-login:input-user
+# form-login:input-pass
+# form-login:j_idt37
 driver.find_element(By.ID, "form-login:input-user").send_keys(matricula)
 driver.find_element(By.ID, "form-login:input-pass").send_keys(contraseña)
 
 # Clic en el botón de iniciar sesión
-driver.find_element(By.ID, "form-login:j_idt35").click()
+driver.find_element(By.ID, "form-login:j_idt37").click()
 
 # Esperar hasta que la página cargue completamente después de iniciar sesión
 WebDriverWait(driver, 10).until(
